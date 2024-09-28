@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .detailscontainer{
+            background: linear-gradient(to bottom,transparent, rgba(0, 0, 0, 0.9));
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full h-full bg-black font-['Gilroy']">
+       <div class="imagecontainer w-full h-screen relative overflow-hidden">
+        <div class="maincard z-[3] w-[130%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[130%] ">
+            <img class="w-full h-full object-cover" src="" alt="">
+        </div>
+        <div class="incoming z-[2] w-[130%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[130%] ">
+            <img class="w-full h-full object-cover" src="" alt="">
+        
+        </div>
+       </div>
+       <div class="w-full h-screen z-[4] top-0 left-0 absolute flex flex-col justify-between">
+        <div class="navbar px-5 py-8 flex justify-between items-center text-white">
+            <div class="prflimg w-[4rem] h-[4rem] rounded-full overflow-hidden bg-red-600">
+                <img class="w-full h-full object-cover" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+            <h3 class="text-lg font-medium tradcking-tighter">They liked you!</h3>
+            <div class="chaticon relative flex items-center justify-center w-[4rem] h-[4rem] rounded-full bg-white/20">
+                <i class="opacity-80 text-2xl ri-chat-3-line"></i>
+                <div class="badge absolute flex items-center justify-center w-5 h-5 rounded-full top-0  right-0 -translate-y-[5px] -translate-x-[3px] bg-red-600">
+                    <h5 class="text-[10px] font-semibold">8</h5>
+                </div>
+            </div>
+        </div>
+        <div class="detailscontainer w-full "></div>
+        <div class="details px-5 py-8 w-full ">
+            <div class="element location flex text-white">
+                <i class="w-[1.5rem] h-[1.5rem] flex items-center justify-center font-semibold bg-white/40 rounded-full ri-arrow-up-double-fill"></i>
+                <h3 class="px-3">USA, CALIFORNIA</h3>
+            </div>
+
+            <div class="element name flex text-white py-2  text-4xl font-semibold tradcking-tighter">
+                <h1>Victoria</h1>
+                <h1 class="opacity-60 px-2">20</h1>
+            </div>
+
+            <div class="element tags flex px-1 gap-5 text-white/90"> 
+                
+
+            </div>
+
+            <div class="element bio text-white/70 mt-4 px-3">
+                <h3 class="text-lg">About</h3>
+                <p class="text-sm mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos.</p>
+            </div>
+
+            <div class="element flex items-start items-center justify-center mt-10 gap-2">
+                <button class="deny text-3xl rounded-full py-3 w-1/2 bg-white">
+                    <i class="ri-close-line"></i>
+                </button>
+                <button class="accept text-3xl text-white rounded-full py-3 w-1/2 bg-red-600">
+                    <i class="ri-heart-line"></i>
+                </button>
+            </div>
+        </div>
+       </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scipt.js"></script>
+</body>
+</html>
